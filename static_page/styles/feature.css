@@ -7,7 +7,9 @@ body {
   width: calc(100% - 70%);
   background-color: #FFFFFF;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 40px;
   position: absolute;
   left: 50%;
@@ -65,6 +67,14 @@ textarea:focus {
   border-bottom: 0;
   border: 1px solid #4C4D6B;
   border-radius: 3px;
+}
+
+input:valid {
+  border-left: 3px solid #00e676;
+}
+
+input:invalid {
+  border-left: 1px solid #FF0000;
 }
 
 label {

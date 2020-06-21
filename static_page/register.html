@@ -4,32 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/button.css" rel="stylesheet" type="text/css">
-  <link href="styles/feature.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <title>Register</title>
 </head>
 
 <body>
-  <div class="c-login">
-    <form action="#" method="POST" class="c-login-container">
-
-      <h1 class="c-login__greeting">Register here!</h1>
-
-      <div class="c-login__input-container">
+  <div>
+    <h1>Register here!</h1>
+    <form method="POST">
+      <div>
         <label for="fname">Name:</label>
-        <input type="text" name="fname" id="fname">
+        <input type="text" name="fname" id="fname" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" required>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <label for="pass">Password:</label>
-        <input type="password" name="pass" id="pass">
-        <label for="rpass">Repeat your password:</label>
-        <input type="password" name="rpass" id="rpass">
+        <input type="email" name="email" id="email" pattern="^\S+@\S+\.\S+$" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" pattern="^[a-zA-Z0-9]+$" required>
+        <label for="rpassword">Repeat your password:</label>
+        <input type="password" name="rpassword" id="rpassword" required>
       </div>
 
-      <div class="c-login__button-container">
-        <a class="button button--secondary " href="feature.html"><span>Back</span></a>
-        <a class="button button--primary c-login__login-button " href="followup.html"><span>Next</span></a>
+      <div>
+        <a href="index.html"><span>Back</span></a>
+        <button type="submit">next</button>
       </div>
 
     </form>

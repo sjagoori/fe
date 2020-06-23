@@ -11,7 +11,8 @@
   <div>
     <h1>Register here!</h1>
     <form method="POST">
-      <div>
+      <fieldset>
+        <legend>Your information</legend>
         <label for="fname">Name:</label>
         <input type="text" name="fname" id="fname" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" required>
         <label for="email">Email:</label>
@@ -20,13 +21,13 @@
         <input type="password" name="password" id="password" pattern="^[a-zA-Z0-9]+$" required>
         <label for="rpassword">Repeat your password:</label>
         <input type="password" name="rpassword" id="rpassword" required>
-      </div>
-
-      <div>
-        <a href="index.html"><span>Back</span></a>
-        <button type="submit">next</button>
-      </div>
-
+        
+        <div>
+          <a href="index.html"><span>Back</span></a>
+          <button type="submit">next</button>
+        </div>
+        
+      </fieldset>
     </form>
   </div>
 </body>

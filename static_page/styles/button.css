@@ -4,13 +4,15 @@
   height: 40px;
   border: 0;
   border-radius: 7px;
-  color: white;
+  color: #000;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   outline: none;
   font-size: 1em;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 .button:focus, button:focus {
@@ -19,22 +21,22 @@
 }
 
 .button--primary {
-  background-color: #1946E5;
+  background-color: #00FF00;
 }
 
 .button--primary:hover {
   transition: .3s;
-  background-color: #466aeb;
-  border-color: #466aeb;
+  background-color: #007900;
+  border-color: #007900;
 }
 
 .button--secondary {
-  background-color: #7388A6;
+  background-color: #DADADA;
 }
 
 .button--secondary:hover {
   transition: .3s;
-  background-color: #596e8d;
+  background-color: #919191;
 }
 
 .button--ghost {

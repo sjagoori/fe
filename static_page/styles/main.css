@@ -1,5 +1,5 @@
 body{
-  background-color: #EBF0F8;
+  background-color: #222424;
 }
 
 .option__container {
@@ -17,13 +17,15 @@ a {
   margin-bottom: 40px;
   padding: 20px 30px;
   width: 300px;
-  background-color: #FFF;
-  color: #262626;
+  background-color: #DADADA;
+  color: #000;
   text-decoration: none;
   text-align: center;
   border-radius: 10px;
 }
 
 a:hover{
-  border: 1px solid #000;
+  background-color: #616161;
+  border: 1px solid #00FF00;
+  color: #00FF00;
 }

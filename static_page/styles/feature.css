@@ -1,11 +1,14 @@
-body {
-  background-color: #EBF0F8;
-  font-family: 'Open Sans', sans-serif;
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body{
+  background-color: #222424;
 }
 
 .c-login {
   width: calc(100% - 70%);
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,8 +39,8 @@ body {
 
 .c-login__greeting,
 .c-login__subheader {
-  color: #4C4D6B;
-  text-align: center;
+  line-height: 1.1;
+  color: #00cc00;
 }
 
 
@@ -52,21 +55,13 @@ body {
 input,
 textarea {
   width: 100%;
-  background-color: transparent;
-  margin: 10px;
-  padding: 5px;
   border: 0;
-  border-bottom: 1px solid #4C4D6B;
+  background-color: #646464;
+  padding: 10px;
+  margin: 10px;
   resize: none;
   outline: none;
-}
-
-input:focus,
-textarea:focus {
-  transition: .3s;
-  border-bottom: 0;
-  border: 1px solid #4C4D6B;
-  border-radius: 3px;
+  color: #FFF;
 }
 
 input:valid {
@@ -74,11 +69,13 @@ input:valid {
 }
 
 input:invalid {
-  border-left: 1px solid #FF0000;
+  border-left: 1.5px solid #FF0000;
 }
 
 label {
   align-self: flex-start;
+  color: #FFF;
+  font-size: 1rem;
 }
 
 .c-login__button-container {
